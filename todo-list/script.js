@@ -25,5 +25,15 @@ document.querySelector('#push').onclick = function(){
                 this.parentNode.remove();
             }
         }
+
+        const tasks = document.querySelectorAll(".task");
+        for(let i = 0; i<tasks.length; i++){
+            tasks[i].onclick = function(){
+                this.classList.toggle('completed');
+            }
+        }
+
+        // clearing the input field after each entry
+        document.querySelector("#newtask input").value = "";
     }
 }
