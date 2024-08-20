@@ -64,6 +64,15 @@ let products = {
     image.setAttribute("src", i.image);
     imgContainer.appendChild(image);
     card.appendChild(imgContainer);
+    // container
+    let container = document.createElement("div");
+    container.classList.add("container");
+    // product name
+    let name = document.createElement("h5");
+    name.classList.add("product-name");
+    name.innerText = i.productName.toUpperCase();
+    container.appendChild(name);
 
+    card.appendChild(container);
     document.getElementById("products").appendChild(card);
   }
