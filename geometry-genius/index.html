@@ -23,27 +23,43 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="m-8">
     <header></header>
 
     <main>
       <!-- main content container -->
-      <div>
+      <div class="flex flex-col md:flex-row">
         <!-- shape card container -->
-        <div>
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           <!-- triangle card -->
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
-              />
+              <img src="images/triangle.png" alt="Triangle" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="card-title">Triangle</h2>
+              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <div>
+                <input
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="b"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="h"
+                />
+                <span class="mr-4 ml-2">cm</span>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculateTriangleArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -101,14 +117,14 @@
         </div>
 
         <!-- area calculation container -->
-        <div class="w-96">
-          <h3 class="text-3xl">Area Calculation</h3>
+        <div class="w-96 border-2 border-gray-700 rounded-md">
+          <h3 class="text-3xl text-center p-4">Area Calculation</h3>
         </div>
       </div>
     </main>
 
     <!-- Daisy UI JS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+    <script src="scripts/triangle-calculate.js"></script>
   </body>
 </html>
