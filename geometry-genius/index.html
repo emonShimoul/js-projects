@@ -154,8 +154,49 @@
             </div>
           </div>
 
-          <!-- Rhombus card -->
+          <!-- Pentagon card -->
           <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img src="images/pentagon.png" alt="Pentagon" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Pentagon</h2>
+              <p class="text-center">Area (A) = 0.5 x p x b</p>
+              <div>
+                <input
+                  id="pentagon-perimeter"
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="perimeter"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  id="pentagon-apothem"
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="apothem"
+                />
+                <span class="mr-4 ml-2">cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">
+                  Area: <span id="pentagon-area"></span
+                  ><span> cm<sup>2</sup></span>
+                </p>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculatePentagonArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rhombus card -->
+          <!-- <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
               <img src="images/rhombus.png" alt="Rhombus" />
             </figure>
@@ -166,7 +207,7 @@
                 <button class="btn btn-primary">Calculate</button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- area calculation container -->
