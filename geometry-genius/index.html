@@ -113,6 +113,47 @@
             </div>
           </div>
 
+          <!-- parallelogram card -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img src="images/parallelogram.png" alt="Parallelogram" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Parallelogram</h2>
+              <p class="text-center">Area (A) = b x h</p>
+              <div>
+                <input
+                  id="parallelogram-base"
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="base"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  id="parallelogram-height"
+                  class="w-24 text-xl p-2 rounded-sm"
+                  type="text"
+                  placeholder="height"
+                />
+                <span class="mr-4 ml-2">cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">
+                  Area: <span id="parallelogram-area"></span
+                  ><span> cm<sup>2</sup></span>
+                </p>
+              </div>
+              <div class="card-actions">
+                <button
+                  onclick="calculateParallelogramArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
           <!-- Rhombus card -->
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
@@ -120,20 +161,6 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rhombus</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Calculate</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- parallelogram card -->
-          <div class="card bg-base-100 w-96 shadow-xl">
-            <figure>
-              <img src="images/parallelogram.png" alt="Shoes" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Parallelogram</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Calculate</button>
@@ -151,6 +178,6 @@
 
     <!-- Daisy UI JS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="scripts/triangle-calculate.js"></script>
+    <script src="scripts/area-calculate.js"></script>
   </body>
 </html>
