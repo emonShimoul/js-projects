@@ -12,6 +12,13 @@ function continueGame() {
   // generate a random alphabet
   const alphabet = getARandomAlphabet();
   console.log(alphabet);
+
+  // set randomly generated alphabet to the screen (display it)
+  const currentAlphabetElement = document.getElementById("current-alphabet");
+  currentAlphabetElement.innerText = alphabet;
+
+  // set background color
+  setBGColorById(alphabet);
 }
 
 function play() {
