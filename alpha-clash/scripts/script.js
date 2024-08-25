@@ -8,7 +8,14 @@
 //   playGroundSection.classList.remove("hidden");
 // }
 
+function continueGame() {
+  // generate a random alphabet
+  const alphabet = getARandomAlphabet();
+  console.log(alphabet);
+}
+
 function play() {
   hideElementById("home-screen");
   showElementById("play-ground");
+  continueGame();
 }
