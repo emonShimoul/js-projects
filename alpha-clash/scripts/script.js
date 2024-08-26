@@ -21,6 +21,9 @@ function handleKeyboardButtonPress(event) {
   // checked match or not
   if (playerPressed === expectedAlphabet) {
     console.log("you get a point");
+    removeBGColorById(expectedAlphabet);
+
+    continueGame();
   } else {
     console.log("you missed. you lost a life.");
   }
