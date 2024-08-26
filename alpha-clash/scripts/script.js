@@ -14,7 +14,7 @@ function handleKeyboardButtonPress(event) {
 
   // checked match or not
   if (playerPressed === expectedAlphabet) {
-    console.log("you get a point");
+    // console.log("you get a point");
     // update score
     const currentScore = getTextElementValueById("current-score");
     const updatedScore = currentScore + 1;
@@ -22,7 +22,7 @@ function handleKeyboardButtonPress(event) {
     removeBGColorById(expectedAlphabet);
     continueGame();
   } else {
-    console.log("you missed. you lost a life.");
+    // console.log("you missed. you lost a life.");
     // reduce life
     const currentLife = getTextElementValueById("current-life");
     const updatedLife = currentLife - 1;
