@@ -21,11 +21,24 @@ function handleKeyboardButtonPress(event) {
   // checked match or not
   if (playerPressed === expectedAlphabet) {
     console.log("you get a point");
-    removeBGColorById(expectedAlphabet);
+    // update score
+    const currentScoreElement = document.getElementById("current-score");
+    const currentScoreText = currentScoreElement.innerText;
+    const currentScore = parseInt(currentScoreText);
 
+    const newScore = currentScore + 1;
+    currentScoreElement.innerText = newScore;
+    removeBGColorById(expectedAlphabet);
     continueGame();
   } else {
     console.log("you missed. you lost a life.");
+    // reduce life
+    const currentLifeElement = document.getElementById("current-life");
+    const currentLifeText = currentLifeElement.innerText;
+    const currentLife = parseInt(currentLifeText);
+
+    const newLife = currentLife - 1;
+    currentLifeElement.innerText = newLife;
   }
 }
 // capture keyboard key press
