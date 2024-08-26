@@ -1,16 +1,5 @@
-// function play() {
-//   // hide the home screen
-//   const homeSection = document.getElementById("home-screen");
-//   homeSection.classList.add("hidden");
-
-//   // show the playground
-//   const playGroundSection = document.getElementById("play-ground");
-//   playGroundSection.classList.remove("hidden");
-// }
-
 function handleKeyboardButtonPress(event) {
   const playerPressed = event.key;
-  // console.log("Player pressed", playerPressed);
 
   // stop the game if pressed 'Esc'
   if (playerPressed === "Escape") {
