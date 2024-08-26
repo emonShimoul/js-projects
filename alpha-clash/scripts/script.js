@@ -12,6 +12,11 @@ function handleKeyboardButtonPress(event) {
   const playerPressed = event.key;
   // console.log("Player pressed", playerPressed);
 
+  // stop the game if pressed 'Esc'
+  if (playerPressed === "Escape") {
+    gameOver();
+  }
+
   // get the expected to press
   const currentAlphabetElement = document.getElementById("current-alphabet");
   const currentAlphabet = currentAlphabetElement.innerText;
@@ -33,6 +38,10 @@ function handleKeyboardButtonPress(event) {
     const currentLife = getTextElementValueById("current-life");
     const updatedLife = currentLife - 1;
     setTextElementValueById("current-life", updatedLife);
+
+    if (updatedLife === 0) {
+      gameOver();
+    }
   }
 }
 // capture keyboard key press
@@ -52,7 +61,26 @@ function continueGame() {
 }
 
 function play() {
+  // hide everything show only the plaground
   hideElementById("home-screen");
+  hideElementById("final-score");
   showElementById("play-ground");
+
+  // reset score and life
+  setTextElementValueById("current-life", 5);
+  setTextElementValueById("current-score", 0);
+
   continueGame();
+}
+
+function gameOver() {
+  hideElementById("play-ground");
+  showElementById("final-score");
+  // update final score
+  const lastScore = getTextElementValueById("current-score");
+  setTextElementValueById("last-score", lastScore);
+
+  // clear the last selected alphabet highlight
+  const currentAlphabet = getTextElementById("current-alphabet");
+  removeBGColorById(currentAlphabet);
 }
