@@ -8,8 +8,22 @@
 //   playGroundSection.classList.remove("hidden");
 // }
 
-function handleKeyboardButtonPress() {
-  console.log("button pressed.");
+function handleKeyboardButtonPress(event) {
+  const playerPressed = event.key;
+  // console.log("Player pressed", playerPressed);
+
+  // get the expected to press
+  const currentAlphabetElement = document.getElementById("current-alphabet");
+  const currentAlphabet = currentAlphabetElement.innerText;
+  const expectedAlphabet = currentAlphabet.toLowerCase();
+  console.log(playerPressed, expectedAlphabet);
+
+  // checked match or not
+  if (playerPressed === expectedAlphabet) {
+    console.log("you get a point");
+  } else {
+    console.log("you missed. you lost a life.");
+  }
 }
 // capture keyboard key press
 document.addEventListener("keyup", handleKeyboardButtonPress);
