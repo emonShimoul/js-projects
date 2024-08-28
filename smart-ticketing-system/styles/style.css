@@ -33,3 +33,18 @@
 .info-common img {
   margin-top: 12px;
 }
+.offers {
+  position: relative;
+}
+.cupon-devider-15 {
+  position: absolute;
+  bottom: -1px;
+  height: 194px;
+  left: 330px;
+}
+.cupon-devider-20 {
+  position: absolute;
+  bottom: -1px;
+  height: 194px;
+  right: 230px;
+}
