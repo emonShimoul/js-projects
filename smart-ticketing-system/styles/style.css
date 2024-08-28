@@ -2,3 +2,27 @@
 .raleway {
   font-family: "Raleway", sans-serif;
 }
+
+.banner {
+  position: relative;
+}
+
+.info-content {
+  position: absolute;
+}
+
+.info-common {
+  border-bottom: 3px solid #1dd100;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.info-common h4 {
+  color: #030712;
+  font-size: 36px;
+  font-weight: bold;
+}
+.info-common p {
+  color: #6d6f74;
+  font-size: 18px;
+}
