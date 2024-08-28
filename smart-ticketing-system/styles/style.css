@@ -3,12 +3,14 @@
   font-family: "Raleway", sans-serif;
 }
 
-.banner {
+.info-content-section {
   position: relative;
 }
 
 .info-content {
   position: absolute;
+  left: 12%;
+  top: -85px;
 }
 
 .info-common {
