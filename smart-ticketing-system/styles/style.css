@@ -11,12 +11,14 @@
   position: absolute;
   left: 12%;
   top: -85px;
+  border-radius: 24px;
 }
 
 .info-common {
   border-bottom: 3px solid #1dd100;
-  border-radius: 20px;
-  padding: 30px;
+  border-radius: 24px;
+  padding: 30px 45px;
+  background-color: white;
 }
 
 .info-common h4 {
@@ -27,4 +29,7 @@
 .info-common p {
   color: #6d6f74;
   font-size: 18px;
+}
+.info-common img {
+  margin-top: 12px;
 }
