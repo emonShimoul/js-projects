@@ -52,3 +52,6 @@
   right: 170px;
   top: -26px;
 }
+.vis-hide {
+  visibility: hidden;
+}
