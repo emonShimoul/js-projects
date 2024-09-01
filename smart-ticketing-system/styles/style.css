@@ -55,3 +55,28 @@
 .vis-hide {
   visibility: hidden;
 }
+
+.hidden {
+  display: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .banner {
+    padding: 50px 20px;
+    text-align: center;
+    background-size: auto;
+    background-position: center;
+  }
+  .banner h3 {
+    font-size: 32px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
