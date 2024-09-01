@@ -71,6 +71,21 @@
   .banner h3 {
     font-size: 32px;
   }
+  .info-content {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 50px;
+  }
+  .info-common {
+    border: 3px solid #1dd100;
+    justify-content: space-between;
+    margin: 10px 40px;
+    padding: 20px 50px;
+  }
+  .info-common h4 {
+    font-size: 24px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -78,5 +93,5 @@
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (max-width: 1024px) {
 }
