@@ -56,7 +56,7 @@
   visibility: hidden;
 }
 
-.hidden {
+.hide {
   display: none;
 }
 
@@ -85,6 +85,15 @@
   }
   .info-common h4 {
     font-size: 24px;
+  }
+  .fifteen-off {
+    margin-bottom: 30px;
+  }
+  .fifteen-off img {
+    display: none;
+  }
+  .twenty-off img {
+    display: none;
   }
 }
 
