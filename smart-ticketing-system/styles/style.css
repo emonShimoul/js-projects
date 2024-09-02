@@ -71,6 +71,8 @@
   .banner h3 {
     font-size: 32px;
   }
+
+  /* info section css */
   .info-content {
     position: relative;
     left: 0;
@@ -86,14 +88,32 @@
   .info-common h4 {
     font-size: 24px;
   }
+
+  /* offer section css */
+  .offers-section {
+    margin: 0 20px;
+  }
   .fifteen-off {
     margin-bottom: 30px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .twenty-off {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
   }
   .fifteen-off img {
     display: none;
   }
   .twenty-off img {
     display: none;
+  }
+  .offer-btn {
+    margin-top: 20px;
   }
 }
 
