@@ -142,6 +142,10 @@
   }
 
   /* paribahan-section starts */
+  .paribahan-section {
+    margin-top: 70px;
+    padding: 30px 12px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
