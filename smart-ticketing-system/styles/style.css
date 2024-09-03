@@ -115,6 +115,11 @@
   .offer-btn {
     margin-top: 20px;
   }
+
+  /* footer-section starts */
+  .footer-section {
+    padding: 20px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
