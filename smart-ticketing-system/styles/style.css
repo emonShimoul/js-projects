@@ -165,6 +165,10 @@
   .greenline h3 {
     font-size: 20px;
   }
+  .seat-left-btn {
+    text-align: right;
+    margin-bottom: 30px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
