@@ -146,6 +146,10 @@
     margin-top: 70px;
     padding: 30px 12px;
   }
+
+  .info-divider-img {
+    display: none;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
