@@ -146,9 +146,24 @@
     margin-top: 70px;
     padding: 30px 12px;
   }
-
   .info-divider-img {
     display: none;
+  }
+  .paribahan-ticket-system {
+    margin: 50px 12px;
+    padding: 30px;
+  }
+  .greenline {
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .greenline img {
+    height: 40px;
+    width: 45px;
+    margin-top: 10px;
+  }
+  .greenline h3 {
+    font-size: 20px;
   }
 }
 
