@@ -120,6 +120,12 @@
   .footer-section {
     padding: 20px;
   }
+  .footer-1 {
+    gap: 50px;
+  }
+  .footer-1-left h3 {
+    font-size: 30px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
