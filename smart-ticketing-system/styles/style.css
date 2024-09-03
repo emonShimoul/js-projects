@@ -122,9 +122,14 @@
   }
   .footer-1 {
     gap: 50px;
+    padding-bottom: 30px;
   }
   .footer-1-left h3 {
     font-size: 30px;
+  }
+  .footer-1-right h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
