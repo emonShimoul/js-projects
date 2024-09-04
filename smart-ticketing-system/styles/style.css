@@ -56,6 +56,11 @@
   visibility: hidden;
 }
 
+.btn-selected {
+  color: white;
+  background-color: #1dd100;
+}
+
 .hide {
   display: none;
 }
