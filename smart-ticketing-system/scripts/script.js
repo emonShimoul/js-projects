@@ -4,7 +4,8 @@ const seatButton = document.querySelectorAll(".seat-btn");
 for (let seat of seatButton) {
   seat.addEventListener("click", () => {
     console.log(seat);
-    seat.classList.add("btn-selected");
-    seat.classList.remove("text-gray-500");
+    seat.classList.toggle("btn-selected");
+    // seat.classList.add("cursor-not-allowed");
+    // seat.classList.remove("text-gray-500");
   });
 }

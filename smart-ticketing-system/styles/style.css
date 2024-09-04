@@ -57,7 +57,7 @@
 }
 
 .btn-selected {
-  color: white;
+  color: white !important;
   background-color: #1dd100;
 }
 
