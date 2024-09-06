@@ -189,6 +189,11 @@
   .ticket-price h3 {
     margin-top: 10px;
   }
+
+  /* paribahan-seat-details css starts */
+  .paribahan-seat-details {
+    padding: 20px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
