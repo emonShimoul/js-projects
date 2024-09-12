@@ -55,18 +55,32 @@ const displayPhones = (phones, isShowAll) => {
 };
 
 const handleShowDetails = async (id) => {
-  console.log("clicked show details", id);
+  // console.log("clicked show details", id);
   // load single phone data
   const res = await fetch(
     `https://openapi.programming-hero.com/api/phone/${id}`
   );
   const data = await res.json();
-  console.log(data);
+  const phone = data.data;
+  // console.log(data);
 
-  showPhoneDetails(data);
+  showPhoneDetails(phone);
 };
 
 const showPhoneDetails = (phone) => {
+  console.log(phone);
+  const phoneName = document.getElementById("show-detail-phone-name");
+  phoneName.innerText = phone.name;
+
+  const showDetailContainer = document.getElementById("show-detail-container");
+
+  showDetailContainer.innerHTML = `
+    <img src="${phone.image}" alt="" />
+    <p>Storage: <span>${phone?.mainFeatures?.storage}</span></p>
+    <p>Display Size: <span>${phone?.mainFeatures?.displaySize}</span></p>
+    <p>GPS: <span>${phone?.others?.GPS}</span></p>
+  `;
+
   // show the modal
   show_details_modal.showModal();
 };
