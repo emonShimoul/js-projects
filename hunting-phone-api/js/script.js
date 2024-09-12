@@ -1,4 +1,4 @@
-const loadPhone = async (searchText, isShowAll) => {
+const loadPhone = async (searchText = "13", isShowAll) => {
   const res = await fetch(
     `https://openapi.programming-hero.com/api/phones?search=${searchText}`
   );
@@ -62,6 +62,13 @@ const handleShowDetails = async (id) => {
   );
   const data = await res.json();
   console.log(data);
+
+  showPhoneDetails(data);
+};
+
+const showPhoneDetails = (phone) => {
+  // show the modal
+  show_details_modal.showModal();
 };
 
 // handle search button
