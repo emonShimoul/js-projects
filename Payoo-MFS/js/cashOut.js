@@ -4,8 +4,6 @@ document
     event.preventDefault();
     console.log("Cash Out Btn clicked");
 
-    // const cashOutInput = document.getElementById("input-cash-out-money").value;
-
     const cashOutInput = getInputFieldValueById("input-cash-out-money");
 
     const pinNumber = getInputFieldValueById("input-cash-out-pin");
