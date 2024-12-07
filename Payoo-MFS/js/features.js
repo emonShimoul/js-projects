@@ -1,5 +1,3 @@
-console.log("features cash out");
-
 document
   .getElementById("btn-show-cash-out")
   .addEventListener("click", function () {
