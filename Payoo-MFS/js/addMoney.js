@@ -6,6 +6,11 @@ document
     const addMoney = getInputFieldValueById("input-add-money");
     const pinNumber = getInputFieldValueById("input-pin-number");
 
+    if (isNaN(addMoney)) {
+      alert("Failed to Add Money. Please enter a valid number...");
+      return;
+    }
+
     if (pinNumber === 1234) {
       const balance = getTextFieldValueById("account-balance");
       const newBalance = balance + addMoney;
