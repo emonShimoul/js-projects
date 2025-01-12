@@ -17,14 +17,31 @@ body {
   gap: 16px;
   overflow: hidden;
 }
+.carousel :where(.card, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .carousel .card {
   list-style: none;
   background: #fff;
   height: 342px;
   border-radius: 8px;
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card .img {
+  background: #8b53ff;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
 }
 .card .img img {
   width: 140px;
   height: 140px;
   object-fit: cover;
+  border-radius: 50%;
 }
