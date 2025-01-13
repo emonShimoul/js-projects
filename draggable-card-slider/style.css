@@ -20,9 +20,13 @@ body {
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
+  top: 50%;
+  font-size: 1.25rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .wrapper i:first-child {
-  left: -22px;
+  left: 18px;
 }
 .wrapper i:last-child {
   right: -22px;
@@ -71,4 +75,16 @@ body {
 .card span {
   color: #6a6d78;
   font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }
