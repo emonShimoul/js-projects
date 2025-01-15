@@ -43,6 +43,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
 .carousel .card {
   list-style: none;
   background: #fff;
