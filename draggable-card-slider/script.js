@@ -2,14 +2,16 @@
 
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper i");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 
 let isDragging = false,
   startX,
   startScrollLeft;
 
+// Add event listeners for the arrow buttons to scroll the carousel left and right
 arrowBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    console.log(btn.id);
+    carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
   });
 });
 
