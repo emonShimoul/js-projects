@@ -1,5 +1,3 @@
-// 20 min
-
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper i");
