@@ -49,6 +49,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
 .carousel.dragging {
   scroll-behavior: auto;
   scroll-snap-type: none;
