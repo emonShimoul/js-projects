@@ -1,5 +1,6 @@
 // 20 min
 
+const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -7,7 +8,8 @@ const carouselChildrens = [...carousel.children];
 
 let isDragging = false,
   startX,
-  startScrollLeft;
+  startScrollLeft,
+  timeoutId;
 
 // Get the number of cards that can fit in the carousel at once
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
@@ -50,6 +52,14 @@ const dragStop = () => {
   carousel.classList.remove("dragging");
 };
 
+const autoPlay = () => {
+  if (window.innerWidth < 800) return; // Return if window is smaller than 800
+
+  // Autoplay the carousel after every 2500 ms
+  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+};
+autoPlay();
+
 const infiniteScroll = () => {
   // If the carousel is at the begining, scroll to the end
   if (carousel.scrollLeft === 0) {
@@ -66,6 +76,10 @@ const infiniteScroll = () => {
     carousel.scrollLeft = carousel.offsetWidth;
     carousel.classList.remove("no-transition");
   }
+
+  // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+  clearTimeout(timeoutId);
+  if (!wrapper.matches(":hover")) autoPlay();
 };
 
 carousel.addEventListener("mousedown", dragStart);
